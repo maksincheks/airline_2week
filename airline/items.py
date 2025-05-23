@@ -1,11 +1,16 @@
-import scrapy
+from scrapy import Field, Item
 
-class AirlineItem(scrapy.Item):
-    url = scrapy.Field()
-    category = scrapy.Field()
-    name = scrapy.Field()
-    code = scrapy.Field()
-    description = scrapy.Field()
-    price = scrapy.Field()
-    properties = scrapy.Field()
-    images = scrapy.Field()
+
+class DynamicItem(Item):
+    feed_name = "wrapper"
+
+    def __setitem__(self, key, value):
+        self.fields.update({key: Field()})
+        self._values.update({key: value})
+
+    def __getitem__(self, key):
+        return super().__getitem__(key)
+
+
+class Product(DynamicItem):
+    feed_name = "products"

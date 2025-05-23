@@ -1,0 +1,204 @@
+2025-05-23 09:57:28 [scrapy.utils.log] INFO: Scrapy 2.13.0 started (bot: airline)
+2025-05-23 09:57:28 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '24.11.0',
+ 'Python': '3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.0.0 (OpenSSL 3.4.1 11 Feb 2025)',
+ 'cryptography': '44.0.3',
+ 'Platform': 'Windows-10-10.0.19045-SP0'}
+2025-05-23 09:57:28 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-05-23 09:57:28 [asyncio] DEBUG: Using selector: SelectSelector
+2025-05-23 09:57:28 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-05-23 09:57:28 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-05-23 09:57:28 [scrapy.extensions.telnet] INFO: Telnet Password: 004828532d254550
+2025-05-23 09:57:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-05-23 09:57:28 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'airline',
+ 'CONCURRENT_REQUESTS': 2,
+ 'DOWNLOAD_DELAY': 3.0,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy.log',
+ 'NEWSPIDER_MODULE': 'airline.spiders',
+ 'SPIDER_MODULES': ['airline.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-05-23 09:57:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-05-23 09:57:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-05-23 09:57:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-05-23 09:57:29 [scrapy.core.engine] INFO: Spider opened
+2025-05-23 09:57:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-05-23 09:57:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-05-23 09:57:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/> (referer: None)
+2025-05-23 09:57:30 [airline] INFO: Parsing main page: https://airline.su/catalogue/
+2025-05-23 09:57:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/> (referer: https://airline.su/catalogue/)
+2025-05-23 09:57:37 [airline] INFO: Parsing category: https://airline.su/catalogue/airline-aksessuary/
+2025-05-23 09:57:37 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://airline.su/catalogue/airline-aksessuary/aromatizatory-vozdukha/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-05-23 09:57:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/instrumenty/diagnosticheskoe-oborudovanie-i-prisposobleniya/> (referer: https://airline.su/catalogue/)
+2025-05-23 09:57:41 [airline] INFO: Parsing category: https://airline.su/catalogue/instrumenty/diagnosticheskoe-oborudovanie-i-prisposobleniya/
+2025-05-23 09:57:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/> (referer: https://airline.su/catalogue/)
+2025-05-23 09:57:44 [airline] INFO: Parsing category: https://airline.su/catalogue/reklama-airline/
+2025-05-23 09:57:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/instrumenty/diagnosticheskoe-oborudovanie-i-prisposobleniya/testery-davleniya-masla-i-topliva/> (referer: https://airline.su/catalogue/instrumenty/diagnosticheskoe-oborudovanie-i-prisposobleniya/)
+2025-05-23 09:57:53 [airline] INFO: Parsing category: https://airline.su/catalogue/instrumenty/diagnosticheskoe-oborudovanie-i-prisposobleniya/testery-davleniya-masla-i-topliva/
+2025-05-23 09:58:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/kartina-dlya-asto-airline-rek-air-15/> (referer: https://airline.su/catalogue/reklama-airline/)
+2025-05-23 09:58:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/reklama-airline/kartina-dlya-asto-airline-rek-air-15/>
+{'categories': ['Каталог', 'Реклама AIRLINE'],
+ 'code': 'REK-AIR-15',
+ 'description': 'Картина из ПВХ в алюминиевой раме. Формат А1.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/9b0/430_341_140cd750bba9870f18aada2478b24840a/b51eb24233c0505210f8d0e8747a4438.jpg',
+            'https://airline.su/upload/resize_cache/iblock/c21/430_341_140cd750bba9870f18aada2478b24840a/371abe2d4582a1f091853df362678bfd.jpg',
+            'https://airline.su/upload/resize_cache/iblock/9b0/80_80_240cd750bba9870f18aada2478b24840a/b51eb24233c0505210f8d0e8747a4438.jpg',
+            'https://airline.su/upload/resize_cache/iblock/c21/80_80_240cd750bba9870f18aada2478b24840a/371abe2d4582a1f091853df362678bfd.jpg'],
+ 'name': 'Картина для АСТО AIRLINE',
+ 'price': '4550.',
+ 'specs': ['Артикул',
+           'REK-AIR-15',
+           'Вес (брутто)',
+           '0.3 кг.',
+           'Длина',
+           '59.4 см.',
+           'Ширина',
+           '84.1 см.',
+           'Высота',
+           '5 см.',
+           'Обьем',
+           '0.025 м',
+           '3',
+           'Страна',
+           'Россия',
+           'Срок годности',
+           'без срока',
+           'Штрихкод',
+           '4680295297864',
+           'Количество',
+           '1',
+           'картина в раме - 1 шт.'],
+ 'timestamp': '2025-05-23T09:58:00.727635',
+ 'url': 'https://airline.su/catalogue/reklama-airline/kartina-dlya-asto-airline-rek-air-15/'}
+2025-05-23 09:58:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/zu-dlya-mobilnykh-ustroystv/adaptery-v-prikurivatel/kabel-aux-3-5-mm-jack-3-5-mm-jack-0-6m-chernyy-aeak003/> (referer: https://airline.su/catalogue/airline-aksessuary/)
+2025-05-23 09:58:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/zu-dlya-mobilnykh-ustroystv/adaptery-v-prikurivatel/kabel-aux-3-5-mm-jack-3-5-mm-jack-0-6m-chernyy-aeak003/>
+{'categories': ['Каталог',
+                'Автомобильные аксессуары',
+                'Зарядки в прикуриватель',
+                'Адаптеры в прикуриватель'],
+ 'code': 'AEAK003',
+ 'description': 'Адаптер в автомобильный прикуриватель AIRLINE - незаменимый '
+                'аксессуар для вашего автомобиля, который позволяет с '
+                'легкостью заряжать различные электронные устройства во время '
+                'поездок. Это устройство преобразует энергию от бортовой '
+                'электрической системы автомобиля, позволяя вам использовать '
+                'ваши гаджеты без перерыва и наслаждаться комфортом в дороге. '
+                'Наш адаптер в прикуриватель обладает простым и удобным '
+                'дизайном, а также компантными размерами, которые позволяют '
+                'легко подключать и отключать его от прикуривателя автомобиля. '
+                'Устройство оснащено двумя USB-портами: один - USB Type-C, '
+                'второй - USB Type-A, что позволяет одновременно подключать '
+                'различные устройства, такие как смартфоны, планшеты, '
+                'навигационные системы или другие электронные гаджеты. Наш '
+                'адаптер в прикуриватель имеет несколько полезных функций, '
+                'которые обеспечивают безопасность и эффективность. Он оснащен '
+                'системой защиты от перегрузки, короткого замыкания и '
+                'перегрева, что обеспечивает безопасность в использовании. Это '
+                'позволяет вам спокойно заряжать свои устройства, не '
+                'беспокоясь о возможных повреждениях электронных компонентах. '
+                'Преимуществом нашего адаптера в прикуриватель также является '
+                'его универсальность. Он совместим со многими моделями и '
+                'марками автомобилей, что делает его идеальным выбором для '
+                'широкого круга автовладельцев. Вы можете использовать его не '
+                'только в своем личном автомобиле, но и в прокатном автомобиле '
+                'или даже подарить его в качестве полезного подарка близким. '
+                'Не упускайте возможность обеспечить себя и свою семью '
+                'максимальным комфортом во время поездок.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/4f9/430_341_140cd750bba9870f18aada2478b24840a/1262c1b61307ace3124b7f24110c19ee.jpg',
+            'https://airline.su/upload/resize_cache/iblock/bce/430_341_140cd750bba9870f18aada2478b24840a/72fcf5ae0eb39893eec726a74afd3f3f.jpg',
+            'https://airline.su/upload/resize_cache/iblock/de7/430_341_140cd750bba9870f18aada2478b24840a/2ab64e047e38ec7284e29d8dd5f9f1b2.jpg',
+            'https://airline.su/upload/resize_cache/iblock/544/430_341_140cd750bba9870f18aada2478b24840a/260af45f8636063fd2d6c90301c89bf4.jpg',
+            'https://airline.su/upload/resize_cache/iblock/83d/430_341_140cd750bba9870f18aada2478b24840a/0687526cf3ff9f3067c87686e4dc377d.jpg',
+            'https://airline.su/upload/resize_cache/iblock/4f9/80_80_240cd750bba9870f18aada2478b24840a/1262c1b61307ace3124b7f24110c19ee.jpg',
+            'https://airline.su/upload/resize_cache/iblock/bce/80_80_240cd750bba9870f18aada2478b24840a/72fcf5ae0eb39893eec726a74afd3f3f.jpg',
+            'https://airline.su/upload/resize_cache/iblock/de7/80_80_240cd750bba9870f18aada2478b24840a/2ab64e047e38ec7284e29d8dd5f9f1b2.jpg',
+            'https://airline.su/upload/resize_cache/iblock/544/80_80_240cd750bba9870f18aada2478b24840a/260af45f8636063fd2d6c90301c89bf4.jpg',
+            'https://airline.su/upload/resize_cache/iblock/83d/80_80_240cd750bba9870f18aada2478b24840a/0687526cf3ff9f3067c87686e4dc377d.jpg'],
+ 'name': 'Адаптер автомобильный Type-C PD + QC 3.0 38Вт, 12/24В PRO',
+ 'price': '1020.',
+ 'specs': ['Выход USB C',
+           '5В/3А, 9В/2А, 12В/1,67А',
+           'Напряжение питания, В',
+           '12/24',
+           'Выход USB QC',
+           '5В/3А, 9В/2А, 12В/1,5А',
+           'Максимальная мощность, Вт',
+           '38',
+           'Артикул',
+           'AEAK003',
+           'Выход USB C',
+           '5В/3А, 9В/2А, 12В/1,67А',
+           'Напряжение питания, В',
+           '12/24',
+           'Выход USB QC',
+           '5В/3А, 9В/2А, 12В/1,5А',
+           'Максимальная мощность, Вт',
+           '38',
+           'Состав',
+           'пластик/металл',
+           'Вес (брутто)',
+           '0.05 кг.',
+           'Длина',
+           '3.2 см.',
+           'Ширина',
+           '8.3 см.',
+           'Высота',
+           '12.2 см.',
+           'Обьем',
+           '0 м',
+           '3',
+           'Сертификат',
+           'EAC//нет',
+           'Страна',
+           'Китай',
+           'Срок годности',
+           'Не ограничен',
+           'Гарантийный срок',
+           '6 месяцев',
+           'Штрихкод',
+           '4680295294511',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Гофрокороб',
+           'Материал упаковки',
+           'Пластик/Картон',
+           'Адаптер - 1шт.',
+           'Коробка - 1шт.',
+           'Бумажный вкладыш - 1 шт.'],
+ 'timestamp': '2025-05-23T09:58:01.040130',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/zu-dlya-mobilnykh-ustroystv/adaptery-v-prikurivatel/kabel-aux-3-5-mm-jack-3-5-mm-jack-0-6m-chernyy-aeak003/'}
