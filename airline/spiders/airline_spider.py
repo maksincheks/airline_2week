@@ -2,7 +2,6 @@ import scrapy
 from urllib.parse import urljoin
 from airline.items import Product
 from datetime import datetime
-import logging
 
 
 class AirlineSpider(scrapy.Spider):
@@ -11,13 +10,7 @@ class AirlineSpider(scrapy.Spider):
     start_urls = ['https://airline.su/catalogue/']
 
     def parse(self, response):
-        self.logger.info(f"Parsing main page: {response.url}")
-
         main_cats = response.xpath("//a[contains(@class, 'category-submenu-link')]/@href").getall()
-
-        if not main_cats:
-            self.logger.error("No main categories found!")
-            return
 
         for url in main_cats:
             yield response.follow(
@@ -27,8 +20,6 @@ class AirlineSpider(scrapy.Spider):
             )
 
     def parse_category(self, response):
-        self.logger.info(f"Parsing category: {response.url}")
-
         product_links = self.get_product_links(response)
         if product_links:
             for product_url in product_links:
@@ -63,33 +54,25 @@ class AirlineSpider(scrapy.Spider):
     def parse_product(self, response):
         item = Product()
         item['url'] = response.url
-
-        # Название
         item['name'] = response.xpath("//div[contains(@class, 'product-card-title')]/h1/text()").get('').strip()
 
-        # Цена
         price = response.xpath("//div[contains(@class, 'product-card-prices-value')]/text()").get()
         item['price'] = ''.join(c for c in price if c.isdigit() or c == '.') if price else None
 
-        # Код товара
         item['code'] = response.xpath("//i[contains(@class, 'icon-copy-code')]/@data-code").get('').strip()
 
-        # Описание
         desc = response.xpath("//div[@class='tabs-content active' and @id='description']//text()").getall()
         item['description'] = ' '.join(t.strip() for t in desc if t.strip()) or 'Нет описания'
 
-        # Характеристики
         specs = response.xpath("//div[contains(@class, 'product-card-prop-item')]//text()").getall()
         item['specs'] = [s.strip() for s in specs if s.strip()] or ['Нет характеристик']
 
-        # Изображения
         images = response.xpath("//img/@src").getall()
         item['images'] = [urljoin(response.url, img) for img in images if '/upload/' in img and 'resize_cache' in img]
 
-        # Категории
         breadcrumbs = response.xpath(
             "//div[contains(@class, 'breadcrumbs')]//a/text() | //div[contains(@class, 'breadcrumbs')]//span/text()").getall()
-        item['categories'] = [b.strip() for b in breadcrumbs if b.strip()][1:]  # Убираем "Главная"
+        item['categories'] = [b.strip() for b in breadcrumbs if b.strip()][1:]
 
         item['timestamp'] = datetime.now().isoformat()
 

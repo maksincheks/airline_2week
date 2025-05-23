@@ -5,7 +5,6 @@ from openpyxl import Workbook
 
 def convert_to_excel():
 
-    # Ищем все JSON-файлы продуктов
     json_files = [f for f in os.listdir('data')
                   if f.startswith('products_') and f.endswith('.json')]
 
@@ -17,10 +16,8 @@ def convert_to_excel():
     for i, f in enumerate(json_files, 1):
         print(f"{i}. {f}")
 
-    # Словарь для хранения уникальных товаров
     unique_products = {}
 
-    # Читаем и объединяем данные из всех файлов
     for json_file in json_files:
         file_path = os.path.join('data', json_file)
         try:
@@ -44,12 +41,10 @@ def convert_to_excel():
 
     print(f"\nИтого уникальных товаров: {len(unique_products)}")
 
-    # Создаем Excel-файл
     wb = Workbook()
     ws = wb.active
     ws.title = "Товары"
 
-    # Заголовки
     headers = [
         'URL', 'Категории', 'Название', 'Артикул',
         'Описание', 'Цена', 'Характеристики', 'Изображения',
@@ -57,7 +52,6 @@ def convert_to_excel():
     ]
     ws.append(headers)
 
-    # Заполняем данные
     for product in unique_products.values():
         row = [
             product.get('url', ''),
@@ -72,7 +66,6 @@ def convert_to_excel():
         ]
         ws.append(row)
 
-    # Настройка ширины столбцов
     column_widths = {
         'A': 50, 'B': 30, 'C': 40, 'D': 15,
         'E': 60, 'F': 15, 'G': 40, 'H': 30,
@@ -81,7 +74,6 @@ def convert_to_excel():
     for col, width in column_widths.items():
         ws.column_dimensions[col].width = width
 
-    # Сохраняем результат
     output_file = os.path.join('data', 'combined_products.xlsx')
     try:
         wb.save(output_file)

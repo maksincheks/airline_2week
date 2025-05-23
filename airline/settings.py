@@ -14,14 +14,13 @@ ROBOTSTXT_OBEY = False
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 
 # Основные настройки
-CONCURRENT_REQUESTS = 2  # Было 16, но в spider стояло 2
-DOWNLOAD_DELAY = 3.0     # Было 0.5, но в spider стояло 3.0
+CONCURRENT_REQUESTS = 8
+DOWNLOAD_DELAY = 0.5
 AUTOTHROTTLE_ENABLED = True
 FEED_EXPORT_ENCODING = 'utf-8'
 LOG_LEVEL = 'DEBUG'
 LOG_FILE = 'scrapy.log'
 
-# Явно указываем классы Items
 ITEM_CLASSES = ['airline.items.Product']
 
 # Настройки экспорта
