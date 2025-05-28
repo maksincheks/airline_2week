@@ -4,7 +4,6 @@ from openpyxl import Workbook
 
 
 def convert_to_excel():
-
     json_files = [f for f in os.listdir('data')
                   if f.startswith('products_') and f.endswith('.json')]
 
@@ -47,8 +46,7 @@ def convert_to_excel():
 
     headers = [
         'URL', 'Категории', 'Название', 'Артикул',
-        'Описание', 'Цена', 'Характеристики', 'Изображения',
-        'Дата парсинга'
+        'Описание', 'Цена', 'Характеристики', 'Изображения'
     ]
     ws.append(headers)
 
@@ -61,15 +59,13 @@ def convert_to_excel():
             product.get('description', ''),
             product.get('price', ''),
             '\n'.join(product.get('specs', [])),
-            '\n'.join(product.get('images', [])),
-            product.get('timestamp', '')
+            '\n'.join(product.get('images', []))
         ]
         ws.append(row)
 
     column_widths = {
         'A': 50, 'B': 30, 'C': 40, 'D': 15,
-        'E': 60, 'F': 15, 'G': 40, 'H': 30,
-        'I': 20
+        'E': 60, 'F': 15, 'G': 40, 'H': 30
     }
     for col, width in column_widths.items():
         ws.column_dimensions[col].width = width

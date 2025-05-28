@@ -21,7 +21,7 @@ FEED_EXPORT_ENCODING = 'utf-8'
 LOG_LEVEL = 'DEBUG'
 LOG_FILE = 'scrapy.log'
 
-ITEM_CLASSES = ['airline.items.Product']
+ITEM_CLASSES = ['airline.items.ProductItem']
 
 # Настройки экспорта
 FEEDS = {

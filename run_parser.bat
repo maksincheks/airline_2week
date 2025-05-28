@@ -9,7 +9,6 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-if not exist "data" mkdir data
 
 echo Running the scraper...
 scrapy crawl airline --logfile=scrapy.log

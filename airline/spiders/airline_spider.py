@@ -1,6 +1,8 @@
 import scrapy
 from urllib.parse import urljoin
-from airline.items import Product
+from typing import Generator, Iterable
+from scrapy.http import Request, Response
+from airline.items import ProductItem
 from datetime import datetime
 
 
@@ -9,50 +11,78 @@ class AirlineSpider(scrapy.Spider):
     allowed_domains = ['airline.su']
     start_urls = ['https://airline.su/catalogue/']
 
-    def parse(self, response):
+    def parse(self, response: Response) -> Iterable[Request]:
         main_cats = response.xpath("//a[contains(@class, 'category-submenu-link')]/@href").getall()
 
         for url in main_cats:
-            yield response.follow(
-                url,
+            yield Request(
+                url=urljoin(response.url, url),
                 callback=self.parse_category,
                 errback=self.errback_handler
             )
 
-    def parse_category(self, response):
-        product_links = self.get_product_links(response)
-        if product_links:
-            for product_url in product_links:
-                yield response.follow(
-                    product_url,
-                    callback=self.parse_product,
-                    errback=self.errback_handler
-                )
+    def parse_category(self, response: Response) -> Iterable[Request]:
+        category_name = response.xpath("//h1/text()").get('').strip()
 
+        # Get total pages count
+        last_page = response.xpath('//a[contains(@class, "page-last")]/@href').get()
+        total_pages = 1
+        if last_page:
+            try:
+                total_pages = int(last_page.split('=')[-1])
+            except (IndexError, ValueError):
+                self.logger.warning(f"Could not parse total pages for {response.url}")
+
+        self.logger.info(f"Parsing category: {category_name}, total pages: {total_pages}")
+
+        # Parse first page
+        yield from self.parse_page(response, category_name, 1)
+
+        # Generate requests for remaining pages
+        for page in range(2, total_pages + 1):
+            page_url = f"{response.url}?PAGEN_1={page}"
+            yield Request(
+                url=page_url,
+                callback=self.parse_page,
+                errback=self.errback_handler,
+                meta={
+                    "page": page,
+                    "category": category_name,
+                }
+            )
+
+        # Process subcategories
         subcategories = response.xpath("//a[contains(@class, 'category-submenu-link')]/@href").getall()
-        if subcategories:
-            for url in subcategories:
-                yield response.follow(
-                    url,
-                    callback=self.parse_category,
-                    errback=self.errback_handler
-                )
-
-        next_page = response.xpath('//a[contains(@class, "page-next")]/@href').get()
-        if next_page:
-            yield response.follow(
-                next_page,
+        for url in subcategories:
+            yield Request(
+                url=urljoin(response.url, url),
                 callback=self.parse_category,
                 errback=self.errback_handler
             )
 
-    def get_product_links(self, response):
+    def parse_page(self, response: Response, category: str = None, page: int = None) -> Iterable[Request]:
+        if category is None or page is None:
+            category = response.meta.get('category', 'unknown')
+            page = response.meta.get('page', 1)
+
+        self.logger.info(f"Parsing page {page} of category '{category}'. URL: {response.url}")
+
+        product_links = self.get_product_links(response)
+        for product_url in product_links:
+            yield Request(
+                url=urljoin(response.url, product_url),
+                callback=self.parse_product,
+                errback=self.errback_handler,
+                meta={'category': category}
+            )
+
+    def get_product_links(self, response: Response) -> list[str]:
         product_links = response.xpath(
             "//div[contains(@class, 'products-list-item fix-prop-height')]//a/@href").getall()
         return list(set(link for link in product_links if link.startswith('/catalogue/')))
 
-    def parse_product(self, response):
-        item = Product()
+    def parse_product(self, response: Response) -> Generator[ProductItem, None, None]:
+        item = ProductItem()
         item['url'] = response.url
         item['name'] = response.xpath("//div[contains(@class, 'product-card-title')]/h1/text()").get('').strip()
 

@@ -12,5 +12,5 @@ class DynamicItem(Item):
         return super().__getitem__(key)
 
 
-class Product(DynamicItem):
+class ProductItem(DynamicItem):
     feed_name = "products"
