@@ -24,7 +24,6 @@ class AirlineSpider(scrapy.Spider):
     def parse_category(self, response: Response) -> Iterable[Request]:
         category_name = response.xpath("//h1/text()").get('').strip()
 
-        # Get total pages count
         last_page = response.xpath('//a[contains(@class, "page-last")]/@href').get()
         total_pages = 1
         if last_page:
@@ -35,10 +34,8 @@ class AirlineSpider(scrapy.Spider):
 
         self.logger.info(f"Parsing category: {category_name}, total pages: {total_pages}")
 
-        # Parse first page
         yield from self.parse_page(response, category_name, 1)
 
-        # Generate requests for remaining pages
         for page in range(2, total_pages + 1):
             page_url = f"{response.url}?PAGEN_1={page}"
             yield Request(
@@ -51,7 +48,6 @@ class AirlineSpider(scrapy.Spider):
                 }
             )
 
-        # Process subcategories
         subcategories = response.xpath("//a[contains(@class, 'category-submenu-link')]/@href").getall()
         for url in subcategories:
             yield Request(
