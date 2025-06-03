@@ -7101,3 +7101,785 @@
            'Упаковка - 1шт.'],
  'timestamp': '2025-05-28T22:28:42.218358',
  'url': 'https://airline.su/catalogue/airline-aksessuary/razyemy-soedinitelnye/razyemy-germetichnye/razyem-2-pin-s-provodami-dlya-generatora-hyundai-porter-dlya-dkho-ptf-mitsubishi-kia-aecc165/'}
+2025-05-30 14:55:20 [scrapy.utils.log] INFO: Scrapy 2.13.0 started (bot: airline)
+2025-05-30 14:55:20 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '24.11.0',
+ 'Python': '3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.0.0 (OpenSSL 3.4.1 11 Feb 2025)',
+ 'cryptography': '44.0.3',
+ 'Platform': 'Windows-10-10.0.19045-SP0'}
+2025-05-30 14:55:20 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-05-30 14:55:20 [asyncio] DEBUG: Using selector: SelectSelector
+2025-05-30 14:55:20 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-05-30 14:55:20 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-05-30 14:55:20 [scrapy.extensions.telnet] INFO: Telnet Password: ea5ee82205760ece
+2025-05-30 14:55:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-05-30 14:55:20 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'airline',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy.log',
+ 'NEWSPIDER_MODULE': 'airline.spiders',
+ 'SPIDER_MODULES': ['airline.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-05-30 14:55:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-05-30 14:55:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-05-30 14:55:21 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-05-30 14:55:21 [scrapy.core.engine] INFO: Spider opened
+2025-05-30 14:55:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-05-30 14:55:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-05-30 14:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/> (referer: None)
+2025-05-31 10:50:05 [scrapy.utils.log] INFO: Scrapy 2.13.0 started (bot: airline)
+2025-05-31 10:50:05 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '24.11.0',
+ 'Python': '3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.0.0 (OpenSSL 3.4.1 11 Feb 2025)',
+ 'cryptography': '44.0.3',
+ 'Platform': 'Windows-10-10.0.19045-SP0'}
+2025-05-31 10:50:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-05-31 10:50:05 [asyncio] DEBUG: Using selector: SelectSelector
+2025-05-31 10:50:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-05-31 10:50:05 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-05-31 10:50:05 [scrapy.extensions.telnet] INFO: Telnet Password: ed74b08316902964
+2025-05-31 10:50:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-05-31 10:50:05 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'airline',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy.log',
+ 'NEWSPIDER_MODULE': 'airline.spiders',
+ 'SPIDER_MODULES': ['airline.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-05-31 10:50:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-05-31 10:50:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-05-31 10:50:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-05-31 10:50:06 [scrapy.core.engine] INFO: Spider opened
+2025-05-31 10:50:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-05-31 10:50:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-05-31 10:50:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/> (referer: None)
+2025-05-31 10:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:10 [airline] INFO: Parsing category: Автомобильные аксессуары, total pages: 1
+2025-05-31 10:50:10 [airline] INFO: Parsing page 1 of category 'Автомобильные аксессуары'. URL: https://airline.su/catalogue/airline-aksessuary/
+2025-05-31 10:50:10 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://airline.su/catalogue/airline-aksessuary/aromatizatory-vozdukha/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-05-31 10:50:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/styazhki_khomuty_kabelnye/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:13 [airline] INFO: Parsing category: Стяжки (хомуты) кабельные, total pages: 1
+2025-05-31 10:50:13 [airline] INFO: Parsing page 1 of category 'Стяжки (хомуты) кабельные'. URL: https://airline.su/catalogue/airline-aksessuary/styazhki_khomuty_kabelnye/
+2025-05-31 10:50:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/startovye-provoda/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:16 [airline] INFO: Parsing category: Стартовые провода, total pages: 1
+2025-05-31 10:50:16 [airline] INFO: Parsing page 1 of category 'Стартовые провода'. URL: https://airline.su/catalogue/airline-aksessuary/startovye-provoda/
+2025-05-31 10:50:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/stakany-dlya-napitkov/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:17 [airline] INFO: Parsing category: Стаканы для напитков, total pages: 1
+2025-05-31 10:50:17 [airline] INFO: Parsing page 1 of category 'Стаканы для напитков'. URL: https://airline.su/catalogue/airline-aksessuary/stakany-dlya-napitkov/
+2025-05-31 10:50:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/sredstvo-po-ukhodu-za-avtomobilem-zimnyaya-seriya/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:17 [airline] INFO: Parsing category: Средство по уходу за автомобилем (зимняя серия), total pages: 1
+2025-05-31 10:50:17 [airline] INFO: Parsing page 1 of category 'Средство по уходу за автомобилем (зимняя серия)'. URL: https://airline.su/catalogue/airline-aksessuary/sredstvo-po-ukhodu-za-avtomobilem-zimnyaya-seriya/
+2025-05-31 10:50:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/sredstva-po-ukhodu-za-avtomobilem-letnyaya-seriya/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:18 [airline] INFO: Parsing category: Средства по уходу за автомобилем (летняя серия), total pages: 1
+2025-05-31 10:50:18 [airline] INFO: Parsing page 1 of category 'Средства по уходу за автомобилем (летняя серия)'. URL: https://airline.su/catalogue/airline-aksessuary/sredstva-po-ukhodu-za-avtomobilem-letnyaya-seriya/
+2025-05-31 10:50:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/sistema_kontrolya_davleniya_v_shinakh_tpms_/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:18 [airline] INFO: Parsing category: Система контроля давления в шинах - TPMS, total pages: 1
+2025-05-31 10:50:18 [airline] INFO: Parsing page 1 of category 'Система контроля давления в шинах - TPMS'. URL: https://airline.su/catalogue/airline-aksessuary/sistema_kontrolya_davleniya_v_shinakh_tpms_/
+2025-05-31 10:50:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/setki-dlya-zashchity-radiatora/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:19 [airline] INFO: Parsing category: Сетки для защиты радиатора, total pages: 1
+2025-05-31 10:50:19 [airline] INFO: Parsing page 1 of category 'Сетки для защиты радиатора'. URL: https://airline.su/catalogue/airline-aksessuary/setki-dlya-zashchity-radiatora/
+2025-05-31 10:50:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/> (referer: https://airline.su/catalogue/)
+2025-05-31 10:50:19 [airline] INFO: Parsing category: Реклама AIRLINE, total pages: 1
+2025-05-31 10:50:19 [airline] INFO: Parsing page 1 of category 'Реклама AIRLINE'. URL: https://airline.su/catalogue/reklama-airline/
+2025-05-31 10:50:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/zu-dlya-mobilnykh-ustroystv/adaptery-v-prikurivatel/adapter-avtomobilnyy-type-c-pd-18vt-5-12v-3a-maks-12-24v-ach-cpd-28/> (referer: https://airline.su/catalogue/airline-aksessuary/)
+2025-05-31 10:50:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/zu-dlya-mobilnykh-ustroystv/adaptery-v-prikurivatel/adapter-avtomobilnyy-type-c-pd-18vt-5-12v-3a-maks-12-24v-ach-cpd-28/>
+{'categories': ['Каталог',
+                'Автомобильные аксессуары',
+                'Зарядки в прикуриватель',
+                'Адаптеры в прикуриватель'],
+ 'code': 'ACH-CPD1',
+ 'description': 'Адаптер подключается в розетку прикуривателя автомобиля '
+                '12/24В и позволяет заряжать мобильные устройства от '
+                'встроенного гнезда USB Type-C. Поддерживает cтандарт быстрой '
+                'зарядки PD (Power Delivery). Превратите ваш автомобильный '
+                'прикуриватель в многофункциональное зарядное устройство с '
+                'помощью нашего автомобильного адаптера USB 12/24В! Этот '
+                'компактный и эффективный адаптер идеально подходит для любого '
+                'автомобиля, обеспечивая надежное зарядное устройство для всех '
+                'ваших портативных устройств. Просто вставьте его в гнездо '
+                'прикуривателя вашего автомобиля, и он будет готов к '
+                'использованию. Адаптер позволяет заряжать мобильные '
+                'устройства от встроенного гнезда USB C. Поддерживает cтандарт '
+                'быстрой зарядки PD (Power Delivery).',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/538/430_341_140cd750bba9870f18aada2478b24840a/c5cfba62fd39fa47f472c72b352dc6aa.jpg',
+            'https://airline.su/upload/resize_cache/iblock/34a/430_341_140cd750bba9870f18aada2478b24840a/98b478cb49f41015200d6e4bb369e89e.jpg',
+            'https://airline.su/upload/resize_cache/iblock/36a/430_341_140cd750bba9870f18aada2478b24840a/641d4c81f19e9f1b27fd8b0aa85a2887.jpg',
+            'https://airline.su/upload/resize_cache/iblock/1f0/430_341_140cd750bba9870f18aada2478b24840a/79163d01b334365d20b7653da8cbf5da.jpg',
+            'https://airline.su/upload/resize_cache/iblock/538/80_80_240cd750bba9870f18aada2478b24840a/c5cfba62fd39fa47f472c72b352dc6aa.jpg',
+            'https://airline.su/upload/resize_cache/iblock/34a/80_80_240cd750bba9870f18aada2478b24840a/98b478cb49f41015200d6e4bb369e89e.jpg',
+            'https://airline.su/upload/resize_cache/iblock/36a/80_80_240cd750bba9870f18aada2478b24840a/641d4c81f19e9f1b27fd8b0aa85a2887.jpg',
+            'https://airline.su/upload/resize_cache/iblock/1f0/80_80_240cd750bba9870f18aada2478b24840a/79163d01b334365d20b7653da8cbf5da.jpg'],
+ 'name': 'Адаптер автомобильный Type-C PD 20Вт, 12/24В',
+ 'price': '595.',
+ 'specs': ['Выход USB C',
+           '5В/3А, 9В/2А, 12В/1.25А',
+           'Напряжение питания, В',
+           '12/24',
+           'Максимальная мощность, Вт',
+           '20',
+           'Артикул',
+           'ACH-CPD1',
+           'Выход USB C',
+           '5В/3А, 9В/2А, 12В/1.25А',
+           'Напряжение питания, В',
+           '12/24',
+           'Максимальная мощность, Вт',
+           '20',
+           'Состав',
+           'пластик/металл',
+           'Вес (брутто)',
+           '0.04 кг.',
+           'Длина',
+           '15 см.',
+           'Ширина',
+           '3 см.',
+           'Высота',
+           '10 см.',
+           'Обьем',
+           '0 м',
+           '3',
+           'Сертификат',
+           'нет//EAC',
+           'Страна',
+           'Китай',
+           'Срок годности',
+           'Не ограничен',
+           'Гарантийный срок',
+           '6 месяцев',
+           'Штрихкод',
+           '4680295113485',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Блистерная упаковка',
+           'Материал упаковки',
+           'Пластик/Картон',
+           'Адаптер - 1шт.',
+           'Коробка - 1шт.'],
+ 'timestamp': '2025-05-31T10:50:20.859597',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/zu-dlya-mobilnykh-ustroystv/adaptery-v-prikurivatel/adapter-avtomobilnyy-type-c-pd-18vt-5-12v-3a-maks-12-24v-ach-cpd-28/'}
+2025-05-31 10:50:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/styazhki_khomuty_kabelnye/styazhki_khomuty_kabelnye_3_6_250_mm_plastikovye_belye_100_sht/> (referer: https://airline.su/catalogue/airline-aksessuary/styazhki_khomuty_kabelnye/)
+2025-05-31 10:50:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/styazhki_khomuty_kabelnye/styazhki_khomuty_kabelnye_3_6_250_mm_plastikovye_belye_100_sht/>
+{'categories': ['Каталог', 'Автомобильные аксессуары', 'Кабельные стяжки'],
+ 'code': 'ACT-N-08',
+ 'description': 'Стяжки кабельные  из легкого и прочного нейлона нашли свое '
+                'применение в быту, промышленной индустрии, строительстве, '
+                'упаковочной отрасли, на транспорте, в электронике и '
+                'электромонтажных работах. Стяжка для проводов характеризуется '
+                'простотой и легкостью осуществления монтажных работ, '
+                'гарантирует надлежащую связку токопроводящих жил без '
+                'применения профессиональных инструментов. Для производства '
+                'стяжек используются специальные негорючие полимерные '
+                'материалы, устойчивые к влияниям механического и атмосферного '
+                'характера. Устройство замка кабельной стяжки представляет '
+                'собой головку с фиксатором. На внутренней рабочей поверхности '
+                'фиксатора расположены пиловидные выступы. При монтаже стяжки '
+                'ее свободный конец заводится в щель между корпусом головки и '
+                'фиксатором. При затягивании стяжки ее внутренняя поверхность '
+                'с зубчатым рельефом входит в зацепление с фиксатором, что '
+                'обеспечивает ступенчатую затяжку. Обратный ход блокируется '
+                'храповым механизмом замка. Зубцы, размещенные ниже '
+                'поверхности ленты, не повреждают закрепляемые предметы и '
+                'безопасны для изоляции кабелей и проводов. ВАЖНО ЗНАТЬ! При '
+                'использовании нейлоновых стяжек следует принимать во внимание '
+                'гигроскопичную природу самого нейлона, т.е. зависимость его '
+                'свойств от влажности и способности как впитывать, так и '
+                'терять влагу.  В связи с этим, в тех случаях, когда вскрытая '
+                'упаковка может быть использована через неопределенное время '
+                'рекомендуется герметично запечатывать пакет для '
+                'предотвращения пересыхания и сохранения гибкости стяжек. В '
+                'любом случае, функциональность высохших и ломких стяжек может '
+                'быть легко восстановлена путем добавления в пакет некоторого '
+                'количества воды. Пересыхание также может быть вызвано не '
+                'соблюдением условий их хранения. Для поддержания оптимальных '
+                'характеристик нейлоновые стяжки должны храниться при '
+                'температуре  23°С и относительной влажности 50%. После того, '
+                'как кабельные стяжки уже установлены,  они будут выполнять '
+                'свою крепежную функцию вне зависимости от колебаний уровня '
+                'влажности и температур.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/5ac/430_341_140cd750bba9870f18aada2478b24840a/1d5c5b65d89b9213256abeba1fd38eaa.jpg',
+            'https://airline.su/upload/resize_cache/iblock/5ac/80_80_240cd750bba9870f18aada2478b24840a/1d5c5b65d89b9213256abeba1fd38eaa.jpg'],
+ 'name': 'Стяжки (хомуты) кабельные 3,6*250 мм, пластиковые, белые, 100 шт.',
+ 'price': '345.',
+ 'specs': ['Длина, мм',
+           '250',
+           'Ширина, мм',
+           '3,6',
+           'Толщина, мм',
+           '1',
+           'Температура эксплуатации, °С',
+           '-25/+80',
+           'Артикул',
+           'ACT-N-08',
+           'Длина, мм',
+           '250',
+           'Ширина, мм',
+           '3,6',
+           'Толщина, мм',
+           '1',
+           'Температура эксплуатации, °С',
+           '-25/+80',
+           'Температура монтажа, °С',
+           '0/+50',
+           'Классификация огнестойкости',
+           'UL94 V-2',
+           'Состав',
+           'нейлон 66',
+           'Вес (брутто)',
+           '0.12 кг.',
+           'Длина',
+           '31 см.',
+           'Ширина',
+           '9 см.',
+           'Высота',
+           '3 см.',
+           'Обьем',
+           '0.001 м',
+           '3',
+           'Сертификат',
+           'нет',
+           'Страна',
+           'Китай',
+           'Срок годности',
+           'Не ограничен',
+           'Гарантийный срок',
+           '–',
+           'Штрихкод',
+           '4680295037262',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Пакет прямоугольник',
+           'Материал упаковки',
+           'Пластик',
+           'Стяжки в ПЭ пакете - 100 шт.'],
+ 'timestamp': '2025-05-31T10:50:21.043591',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/styazhki_khomuty_kabelnye/styazhki_khomuty_kabelnye_3_6_250_mm_plastikovye_belye_100_sht/'}
+2025-05-31 10:50:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/startovye-provoda/zazhimy-krokodily-dlya-puskovykh-provodov-l-10-sht-400a-14kh10-5sm-sa400p10/> (referer: https://airline.su/catalogue/airline-aksessuary/startovye-provoda/)
+2025-05-31 10:50:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/startovye-provoda/zazhimy-krokodily-dlya-puskovykh-provodov-l-10-sht-400a-14kh10-5sm-sa400p10/>
+{'categories': ['Каталог',
+                'Автомобильные аксессуары',
+                'Провода для прикуривания автомобиля'],
+ 'code': 'SA400P10',
+ 'description': 'Зажим Крокодил обладает изолированным корпусом стойким к '
+                'ударам, морозам и химическим веществам. С помощью зажимов '
+                'можно создавать соединительные, измерительные и '
+                'подстыковочные провода. Изделие применяется в строительстве, '
+                'станко-приборостроение, производстве и в транспорте.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/3ec/430_341_140cd750bba9870f18aada2478b24840a/c28e8393061da0000bdb14cd7b0419ef.jpg',
+            'https://airline.su/upload/resize_cache/iblock/8cc/430_341_140cd750bba9870f18aada2478b24840a/745697824df9ec91fa84720eae846883.jpg',
+            'https://airline.su/upload/resize_cache/iblock/861/430_341_140cd750bba9870f18aada2478b24840a/8da1c17c7a77862fafd83abb3b1cf552.jpg',
+            'https://airline.su/upload/resize_cache/iblock/3ec/80_80_240cd750bba9870f18aada2478b24840a/c28e8393061da0000bdb14cd7b0419ef.jpg',
+            'https://airline.su/upload/resize_cache/iblock/8cc/80_80_240cd750bba9870f18aada2478b24840a/745697824df9ec91fa84720eae846883.jpg',
+            'https://airline.su/upload/resize_cache/iblock/861/80_80_240cd750bba9870f18aada2478b24840a/8da1c17c7a77862fafd83abb3b1cf552.jpg'],
+ 'name': 'Зажимы (крокодилы) для пусковых проводов L (10 шт.) (400А, '
+         '14х10,5см)',
+ 'price': '1690.',
+ 'specs': ['Материал зажимов',
+           'омедненная сталь',
+           'Материал покрытия ручек',
+           'диэлектрическая краска',
+           'Сила тока, А',
+           '400',
+           'Рабочая температура, C',
+           'от - 40 до + 80',
+           'Артикул',
+           'SA400P10',
+           'Материал зажимов',
+           'омедненная сталь',
+           'Материал покрытия ручек',
+           'диэлектрическая краска',
+           'Сила тока, А',
+           '400',
+           'Рабочая температура, C',
+           'от - 40 до + 80',
+           'Длина зажима, мм',
+           '140',
+           'Максимальное растояние между контактами (раскрытие), мм',
+           '50',
+           'Расстояние между ручками, мм',
+           '105',
+           'Состав',
+           'Сталь, омедненный сплав, диэлектрическая краска',
+           'Вес (брутто)',
+           '0.87 кг.',
+           'Длина',
+           '23.5 см.',
+           'Ширина',
+           '17 см.',
+           'Высота',
+           '4 см.',
+           'Обьем',
+           '0.002 м',
+           '3',
+           'Сертификат',
+           'нет',
+           'Страна',
+           'Китай',
+           'Срок годности',
+           'Не ограничен',
+           'Гарантийный срок',
+           '1 год',
+           'Штрихкод',
+           '4680295171706',
+           'Количество',
+           '10',
+           'Тип упаковки',
+           'Пакет прямоугольник',
+           'Материал упаковки',
+           'Пластик/Картон',
+           'Зажимы для проводов красного цвета - 5 шт.',
+           'Зажимы для проводов черного цвета - 5 шт.',
+           'Пакет со стикером - 1 шт.'],
+ 'timestamp': '2025-05-31T10:50:21.601024',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/startovye-provoda/zazhimy-krokodily-dlya-puskovykh-provodov-l-10-sht-400a-14kh10-5sm-sa400p10/'}
+2025-05-31 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/stakany-dlya-napitkov/stakan-dlya-kofe-i-dr-napitkov-germ-kryshka-430-ml-plastik-chern-oranzh-it-14/> (referer: https://airline.su/catalogue/airline-aksessuary/stakany-dlya-napitkov/)
+2025-05-31 10:50:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/stakany-dlya-napitkov/stakan-dlya-kofe-i-dr-napitkov-germ-kryshka-430-ml-plastik-chern-oranzh-it-14/>
+{'categories': ['Каталог', 'Автомобильные аксессуары', 'Стаканы для напитков'],
+ 'code': 'IT-14',
+ 'description': 'Многоразовый кофейная кружка выглядит, как обычный '
+                'одноразовый стакан на вынос из кофейни. Он предназначен для '
+                'питья свежеприготовленного кофе и других напитков. Изготовлен '
+                'из пищевого пластика (PP) с герметичной крышкой и '
+                'термостойким резиновым держателем для защиты рук от ожога и '
+                'случайного выскальзования.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/2ef/430_341_140cd750bba9870f18aada2478b24840a/194d1ea9ba398e4322f9944edc43cc68.jpg',
+            'https://airline.su/upload/resize_cache/iblock/0bc/430_341_140cd750bba9870f18aada2478b24840a/a9d5db1dc85008cc31c0fa407bf3aeca.jpg',
+            'https://airline.su/upload/resize_cache/iblock/921/430_341_140cd750bba9870f18aada2478b24840a/e3bf42db6bb070ddf549822ccfe3b053.jpg',
+            'https://airline.su/upload/resize_cache/iblock/2ef/80_80_240cd750bba9870f18aada2478b24840a/194d1ea9ba398e4322f9944edc43cc68.jpg',
+            'https://airline.su/upload/resize_cache/iblock/0bc/80_80_240cd750bba9870f18aada2478b24840a/a9d5db1dc85008cc31c0fa407bf3aeca.jpg',
+            'https://airline.su/upload/resize_cache/iblock/921/80_80_240cd750bba9870f18aada2478b24840a/e3bf42db6bb070ddf549822ccfe3b053.jpg'],
+ 'name': 'Кружка для кофе и др. напитков, герм. крышка, 430 мл., пластик, '
+         'черн./оранж.',
+ 'price': '395.',
+ 'specs': ['Объем, мл',
+           '450',
+           'Диаметр горла, мм',
+           '77',
+           'Диаметр дна, мм',
+           '52',
+           'Артикул',
+           'IT-14',
+           'Объем, мл',
+           '450',
+           'Диаметр горла, мм',
+           '77',
+           'Диаметр дна, мм',
+           '52',
+           'Состав',
+           'полипропилен, резина',
+           'Вес (брутто)',
+           '0.12 кг.',
+           'Длина',
+           '9 см.',
+           'Ширина',
+           '17 см.',
+           'Высота',
+           '9 см.',
+           'Обьем',
+           '0.001 м',
+           '3',
+           'Сертификат',
+           'нет',
+           'Страна',
+           'Китай',
+           'Срок годности',
+           'Не ограничен',
+           'Гарантийный срок',
+           '–',
+           'Штрихкод',
+           '4680295031208',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Коробка/бокс',
+           'Материал упаковки',
+           'Картон',
+           'Стакан-1 шт.',
+           'Коробка-1 шт.'],
+ 'timestamp': '2025-05-31T10:50:22.143956',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/stakany-dlya-napitkov/stakan-dlya-kofe-i-dr-napitkov-germ-kryshka-430-ml-plastik-chern-oranzh-it-14/'}
+2025-05-31 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/sredstvo-po-ukhodu-za-avtomobilem-zimnyaya-seriya/shchetki-ot-snega-i-lda/> (referer: https://airline.su/catalogue/airline-aksessuary/sredstvo-po-ukhodu-za-avtomobilem-zimnyaya-seriya/)
+2025-05-31 10:50:22 [airline] INFO: Parsing category: Щетки от снега и льда, total pages: 1
+2025-05-31 10:50:22 [airline] INFO: Parsing page 1 of category 'Щетки от снега и льда'. URL: https://airline.su/catalogue/airline-aksessuary/sredstvo-po-ukhodu-za-avtomobilem-zimnyaya-seriya/shchetki-ot-snega-i-lda/
+2025-05-31 10:50:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/sredstva-po-ukhodu-za-avtomobilem-letnyaya-seriya/shvabry-i-shchetki/> (referer: https://airline.su/catalogue/airline-aksessuary/sredstva-po-ukhodu-za-avtomobilem-letnyaya-seriya/)
+2025-05-31 10:50:23 [airline] INFO: Parsing category: Швабры и щетки, total pages: 1
+2025-05-31 10:50:23 [airline] INFO: Parsing page 1 of category 'Швабры и щетки'. URL: https://airline.su/catalogue/airline-aksessuary/sredstva-po-ukhodu-za-avtomobilem-letnyaya-seriya/shvabry-i-shchetki/
+2025-05-31 10:50:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/sistema_kontrolya_davleniya_v_shinakh_tpms_/kolpachok-na-shinnyy-ventil-s-datchikom-tpms-zapasnoy-aebj004/> (referer: https://airline.su/catalogue/airline-aksessuary/sistema_kontrolya_davleniya_v_shinakh_tpms_/)
+2025-05-31 10:50:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/sistema_kontrolya_davleniya_v_shinakh_tpms_/kolpachok-na-shinnyy-ventil-s-datchikom-tpms-zapasnoy-aebj004/>
+{'categories': ['Каталог',
+                'Автомобильные аксессуары',
+                'Система контроля давления в шинах - TPMS'],
+ 'code': 'AEBJ004',
+ 'description': 'Утеря и порча колпачкой с датчиком TPMS, к сожалению, '
+                'является нередкой проблемой автолюбителей, пользующихся этой '
+                'удобной технологией. Проблему может решить запасной колпачек '
+                'с датчиком давления TPMS. Колпачек подходит для всех систем '
+                'контроля давления AIRLINE, его можно интегрировать взамен '
+                'старого. В комплекте идет инструкция, которая поможет без '
+                'труда привязать новый датчик.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/22c/430_341_140cd750bba9870f18aada2478b24840a/055814822d4391020284a403285cf06a.jpg',
+            'https://airline.su/upload/resize_cache/iblock/609/430_341_140cd750bba9870f18aada2478b24840a/7db6541d71b4ada777e79f9fa93c1725.jpg',
+            'https://airline.su/upload/resize_cache/iblock/a6e/430_341_140cd750bba9870f18aada2478b24840a/59b7e4d5940efdb713b1ff5fa3f0c92e.jpg',
+            'https://airline.su/upload/resize_cache/iblock/a73/430_341_140cd750bba9870f18aada2478b24840a/96dda3014eedb8eb5be7c3e934a03f16.jpg',
+            'https://airline.su/upload/resize_cache/iblock/22c/80_80_240cd750bba9870f18aada2478b24840a/055814822d4391020284a403285cf06a.jpg',
+            'https://airline.su/upload/resize_cache/iblock/609/80_80_240cd750bba9870f18aada2478b24840a/7db6541d71b4ada777e79f9fa93c1725.jpg',
+            'https://airline.su/upload/resize_cache/iblock/a6e/80_80_240cd750bba9870f18aada2478b24840a/59b7e4d5940efdb713b1ff5fa3f0c92e.jpg',
+            'https://airline.su/upload/resize_cache/iblock/a73/80_80_240cd750bba9870f18aada2478b24840a/96dda3014eedb8eb5be7c3e934a03f16.jpg'],
+ 'name': 'Колпачок на шинный вентиль с датчиком TPMS запасной',
+ 'price': '795.',
+ 'specs': ['Питание',
+           'от батарейки',
+           'Датчики',
+           'внешние',
+           'Диапазон измеряемого давления, bar',
+           '0 - 3.5',
+           'Количество датчиков, шт',
+           '1',
+           'Артикул',
+           'AEBJ004',
+           'Питание',
+           'от батарейки',
+           'Датчики',
+           'внешние',
+           'Диапазон измеряемого давления, bar',
+           '0 - 3.5',
+           'Количество датчиков, шт',
+           '1',
+           'Мощность передатчика, мВт',
+           '< 1.1',
+           'Мин. Рабочая температура датчиков, °С',
+           '-30',
+           'Макс. Рабочая температура датчиков, °С',
+           '120',
+           'Частота передатчика датчиков, МГц',
+           '433.87 – 434.14',
+           'Элемент питания',
+           'CR1632H',
+           'Состав',
+           'пластик, металл',
+           'Вес (брутто)',
+           '0.03 кг.',
+           'Длина',
+           '3 см.',
+           'Ширина',
+           '4 см.',
+           'Высота',
+           '3 см.',
+           'Обьем',
+           '0 м',
+           '3',
+           'Сертификат',
+           'EAC//нет',
+           'Страна',
+           'Китай',
+           'Срок годности',
+           'не ограничен',
+           'Гарантийный срок',
+           '1 год',
+           'Штрихкод',
+           '4680295349860',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Пакет без формы',
+           'Материал упаковки',
+           'Пластик',
+           'Датчик-колпачек - 1 шт.',
+           'Инструкция - 1 шт.'],
+ 'timestamp': '2025-05-31T10:50:23.860679',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/sistema_kontrolya_davleniya_v_shinakh_tpms_/kolpachok-na-shinnyy-ventil-s-datchikom-tpms-zapasnoy-aebj004/'}
+2025-05-31 10:50:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/airline-aksessuary/setki-dlya-zashchity-radiatora/setka_dlya_zashchity_radiatora_alyum_yach_10_4_mm_r10_100_40_sm_bez_pokraski_1_sht_/> (referer: https://airline.su/catalogue/airline-aksessuary/setki-dlya-zashchity-radiatora/)
+2025-05-31 10:50:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/airline-aksessuary/setki-dlya-zashchity-radiatora/setka_dlya_zashchity_radiatora_alyum_yach_10_4_mm_r10_100_40_sm_bez_pokraski_1_sht_/>
+{'categories': ['Каталог',
+                'Автомобильные аксессуары',
+                'Сетки для защиты радиатора'],
+ 'code': 'APM-A-03',
+ 'description': 'Сетка предназначена для самостоятельного монтажа на '
+                'радиаторную решетку или бампер автомобиля с целью защиты '
+                'радиаторов систем охлаждения и кондиционирования от попадания '
+                'грязи, камней и крупных насекомых, а также индивидуального '
+                'тюнинга автомобиля.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/be6/430_341_140cd750bba9870f18aada2478b24840a/6d25ef8c7df14c266d5587e4007cecf4.jpg',
+            'https://airline.su/upload/resize_cache/iblock/f1e/430_341_140cd750bba9870f18aada2478b24840a/61607458ca4ef8f780f9da9616bf8eeb.jpg',
+            'https://airline.su/upload/resize_cache/iblock/be6/80_80_240cd750bba9870f18aada2478b24840a/6d25ef8c7df14c266d5587e4007cecf4.jpg',
+            'https://airline.su/upload/resize_cache/iblock/f1e/80_80_240cd750bba9870f18aada2478b24840a/61607458ca4ef8f780f9da9616bf8eeb.jpg'],
+ 'name': 'Сетка для защиты радиатора, алюм., яч. 10*4 мм (R10), 100*40 см, без '
+         'покраски (1 шт.)',
+ 'price': '1065.',
+ 'specs': ['Ширина, мм',
+           '400',
+           'Длина, мм',
+           '1000',
+           'Размер ячеки, мм',
+           '10',
+           'Покраска',
+           'нет',
+           'Артикул',
+           'APM-A-03',
+           'Ширина, мм',
+           '400',
+           'Длина, мм',
+           '1000',
+           'Размер ячеки, мм',
+           '10',
+           'Покраска',
+           'нет',
+           'Состав',
+           'алюминий',
+           'Вес (брутто)',
+           '0.32 кг.',
+           'Длина',
+           '100 см.',
+           'Ширина',
+           '0.1 см.',
+           'Высота',
+           '40 см.',
+           'Обьем',
+           '0 м',
+           '3',
+           'Сертификат',
+           'нет',
+           'Страна',
+           'Россия',
+           'Срок годности',
+           'Не ограничен',
+           'Гарантийный срок',
+           '–',
+           'Штрихкод',
+           '4680295081562',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Обертка',
+           'Материал упаковки',
+           'Пластик',
+           'Сетка-1 шт.',
+           'Навершие с подвесом-1 шт.'],
+ 'timestamp': '2025-05-31T10:50:24.438795',
+ 'url': 'https://airline.su/catalogue/airline-aksessuary/setki-dlya-zashchity-radiatora/setka_dlya_zashchity_radiatora_alyum_yach_10_4_mm_r10_100_40_sm_bez_pokraski_1_sht_/'}
+2025-05-31 10:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/promo-stend-airline-n8-185-44-sm-30-kryuchkov-apos-sb-8-/> (referer: https://airline.su/catalogue/reklama-airline/)
+2025-05-31 10:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/reklama-airline/promo-stend-airline-n8-185-44-sm-30-kryuchkov-apos-sb-8-/>
+{'categories': ['Каталог', 'Реклама AIRLINE'],
+ 'code': 'APOS-SB-8',
+ 'description': 'Устойчивая перфопанель с навершием в виде стикера на фризе.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/584/430_341_140cd750bba9870f18aada2478b24840a/d239c407d7719ad7606971958dfc9980.jpg',
+            'https://airline.su/upload/resize_cache/iblock/469/430_341_140cd750bba9870f18aada2478b24840a/9f3f5552a27d793580ba9604afe07394.jpg',
+            'https://airline.su/upload/resize_cache/iblock/584/80_80_240cd750bba9870f18aada2478b24840a/d239c407d7719ad7606971958dfc9980.jpg',
+            'https://airline.su/upload/resize_cache/iblock/469/80_80_240cd750bba9870f18aada2478b24840a/9f3f5552a27d793580ba9604afe07394.jpg'],
+ 'name': 'Промо-стенд AIRLINE N8 (185*44 см, 30 крючков)',
+ 'price': '12000.',
+ 'specs': ['Шаг перфорации',
+           '12мм',
+           'Артикул',
+           'APOS-SB-8',
+           'Шаг перфорации',
+           '12мм',
+           'Состав',
+           'Металл',
+           'Вес (брутто)',
+           '16 кг.',
+           'Длина',
+           '185 см.',
+           'Ширина',
+           '25 см.',
+           'Высота',
+           '44 см.',
+           'Обьем',
+           '0.204 м',
+           '3',
+           'Страна',
+           'Россия',
+           'Срок годности',
+           'Не ограничен',
+           'Штрихкод',
+           '4680295171775',
+           'Количество',
+           '1',
+           'Тип упаковки',
+           'Ярлык/Бирка',
+           'Материал упаковки',
+           'Бумага',
+           '-Стенд с перфолистом 1840*440мм',
+           '-Крючок одинарный O5 200мм ПФ25',
+           '-Фриз для стойки 440 мм с наклейкой'],
+ 'timestamp': '2025-05-31T10:50:25.150165',
+ 'url': 'https://airline.su/catalogue/reklama-airline/promo-stend-airline-n8-185-44-sm-30-kryuchkov-apos-sb-8-/'}
+2025-05-31 10:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/promo-stend-dlya-shchetok-stekloochistitelya-airline-n5-2-kh-yarusnaya-apos-sb-5/> (referer: https://airline.su/catalogue/reklama-airline/)
+2025-05-31 10:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/reklama-airline/promo-stend-dlya-shchetok-stekloochistitelya-airline-n5-2-kh-yarusnaya-apos-sb-5/>
+{'categories': ['Каталог', 'Реклама AIRLINE'],
+ 'code': 'APOS-SB-5',
+ 'description': 'Размеры 1930х400; 12 крючков; 60 шаг крючка',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/305/430_341_140cd750bba9870f18aada2478b24840a/9b82cfb83850ec236b0c66425d5a7553.jpg',
+            'https://airline.su/upload/resize_cache/iblock/305/80_80_240cd750bba9870f18aada2478b24840a/9b82cfb83850ec236b0c66425d5a7553.jpg'],
+ 'name': 'Промо-стенд для щеток стеклоочистителя AIRLINE N5 2-х ярусная',
+ 'price': '11700.',
+ 'specs': ['Артикул',
+           'APOS-SB-5',
+           'Вес (брутто)',
+           '3 кг.',
+           'Длина',
+           '40 см.',
+           'Ширина',
+           '50 см.',
+           'Высота',
+           '193 см.',
+           'Обьем',
+           '0.386 м',
+           '3',
+           'Страна',
+           'Россия',
+           'Срок годности',
+           'без срока',
+           'Штрихкод',
+           '4680295297178',
+           'стенд - 1 шт.',
+           'крючки - 12 шт.'],
+ 'timestamp': '2025-05-31T10:50:25.665786',
+ 'url': 'https://airline.su/catalogue/reklama-airline/promo-stend-dlya-shchetok-stekloochistitelya-airline-n5-2-kh-yarusnaya-apos-sb-5/'}
+2025-05-31 10:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/promo-stoyka-vrashchayushchayasya-nastolnaya-3-kh-yarusnaya-apos-sb-4/> (referer: https://airline.su/catalogue/reklama-airline/)
+2025-05-31 10:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/reklama-airline/promo-stoyka-vrashchayushchayasya-nastolnaya-3-kh-yarusnaya-apos-sb-4/>
+{'categories': ['Каталог', 'Реклама AIRLINE'],
+ 'code': 'APOS-SB-4',
+ 'description': 'Нет описания',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/4b6/430_341_140cd750bba9870f18aada2478b24840a/f963733ae4247f3744306ba90dc67813.jpg',
+            'https://airline.su/upload/resize_cache/iblock/f9b/430_341_140cd750bba9870f18aada2478b24840a/3ee08971721186c1cbb1b4757faa7059.jpg',
+            'https://airline.su/upload/resize_cache/iblock/bc3/430_341_140cd750bba9870f18aada2478b24840a/62ea54c227a5f36b74b6103ba94efd7b.jpg',
+            'https://airline.su/upload/resize_cache/iblock/4b6/80_80_240cd750bba9870f18aada2478b24840a/f963733ae4247f3744306ba90dc67813.jpg',
+            'https://airline.su/upload/resize_cache/iblock/f9b/80_80_240cd750bba9870f18aada2478b24840a/3ee08971721186c1cbb1b4757faa7059.jpg',
+            'https://airline.su/upload/resize_cache/iblock/bc3/80_80_240cd750bba9870f18aada2478b24840a/62ea54c227a5f36b74b6103ba94efd7b.jpg'],
+ 'name': 'Промо-стойка вращающаяся настольная 3-х ярусная',
+ 'price': '2540.',
+ 'specs': ['Артикул',
+           'APOS-SB-4',
+           'Вес (брутто)',
+           '1 кг.',
+           'Длина',
+           '21 см.',
+           'Ширина',
+           '12 см.',
+           'Высота',
+           '12 см.',
+           'Обьем',
+           '0.003 м',
+           '3',
+           'Страна',
+           'Россия',
+           'Штрихкод',
+           '4680295297185',
+           'Количество',
+           '1'],
+ 'timestamp': '2025-05-31T10:50:26.103293',
+ 'url': 'https://airline.su/catalogue/reklama-airline/promo-stoyka-vrashchayushchayasya-nastolnaya-3-kh-yarusnaya-apos-sb-4/'}
+2025-05-31 10:50:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://airline.su/catalogue/reklama-airline/katalog-airline-shchetki-stekloochistitelya-pl-air-22/> (referer: https://airline.su/catalogue/reklama-airline/)
+2025-05-31 10:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://airline.su/catalogue/reklama-airline/katalog-airline-shchetki-stekloochistitelya-pl-air-22/>
+{'categories': ['Каталог', 'Реклама AIRLINE'],
+ 'code': 'PL-AIR-22',
+ 'description': 'Каталог формата А4, полноцветная печать.',
+ 'images': ['https://airline.su/upload/resize_cache/iblock/4f2/430_341_140cd750bba9870f18aada2478b24840a/1671aef6028778bb8e5eb32a7aacbde2.jpg',
+            'https://airline.su/upload/resize_cache/iblock/e86/430_341_140cd750bba9870f18aada2478b24840a/d6693131bacb18cd36211786849a4d13.jpg',
+            'https://airline.su/upload/resize_cache/iblock/4f2/80_80_240cd750bba9870f18aada2478b24840a/1671aef6028778bb8e5eb32a7aacbde2.jpg',
+            'https://airline.su/upload/resize_cache/iblock/e86/80_80_240cd750bba9870f18aada2478b24840a/d6693131bacb18cd36211786849a4d13.jpg'],
+ 'name': 'Каталог AIRLINE Щетки стеклоочистителя',
+ 'price': '106.',
+ 'specs': ['Артикул',
+           'PL-AIR-22',
+           'Состав',
+           'бумага',
+           'Вес (брутто)',
+           '0.01 кг.',
+           'Длина',
+           '29.7 см.',
+           'Ширина',
+           '0.1 см.',
+           'Высота',
+           '21 см.',
+           'Обьем',
+           '0 м',
+           '3',
+           'Страна',
+           'Россия',
+           'Срок годности',
+           'без срока',
+           'Штрихкод',
+           '4680295331858',
+           'Количество',
+           '1',
+           'каталог - 1 шт.'],
+ 'timestamp': '2025-05-31T10:50:26.790784',
+ 'url': 'https://airline.su/catalogue/reklama-airline/katalog-airline-shchetki-stekloochistitelya-pl-air-22/'}
+2025-05-31 10:50:27 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-05-31 10:50:27 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2025-05-31 10:50:27 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2025-05-31 10:50:27 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://airline.su/catalogue/reklama-airline/karandash-trekhgrannyy-airline-rek-air-07/. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2025-05-31 10:50:27 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://airline.su/catalogue/reklama-airline/karandash-trekhgrannyy-airline-rek-air-07/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]

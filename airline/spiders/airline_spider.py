@@ -30,9 +30,10 @@ class AirlineSpider(scrapy.Spider):
             try:
                 total_pages = int(last_page.split('=')[-1])
             except (IndexError, ValueError):
-                self.logger.warning(f"Could not parse total pages for {response.url}")
+                self.logger.warning("Could not parse total pages for %s", response.url)
 
-        self.logger.info(f"Parsing category: {category_name}, total pages: {total_pages}")
+        self.logger.info("Parsing category: %s, total pages: %d. URL: %s",
+                         category_name, total_pages, response.url)
 
         yield from self.parse_page(response, category_name, 1)
 
@@ -61,7 +62,8 @@ class AirlineSpider(scrapy.Spider):
             category = response.meta.get('category', 'unknown')
             page = response.meta.get('page', 1)
 
-        self.logger.info(f"Parsing page {page} of category '{category}'. URL: {response.url}")
+        self.logger.info("Parsing page %d of category '%s'. URL: %s",
+                         page, category, response.url)
 
         product_links = self.get_product_links(response)
         for product_url in product_links:
@@ -78,6 +80,8 @@ class AirlineSpider(scrapy.Spider):
         return list(set(link for link in product_links if link.startswith('/catalogue/')))
 
     def parse_product(self, response: Response) -> Generator[ProductItem, None, None]:
+        self.logger.info("Parsing product %s", response.url)
+
         item = ProductItem()
         item['url'] = response.url
         item['name'] = response.xpath("//div[contains(@class, 'product-card-title')]/h1/text()").get('').strip()
@@ -105,4 +109,7 @@ class AirlineSpider(scrapy.Spider):
         yield item
 
     def errback_handler(self, failure):
-        self.logger.error(f"Request failed: {failure.request.url}, Reason: {failure.value}")
+        self.logger.error("Request failed: %s, Reason: %s", failure.request.url, failure.value)
+
+
+[file content end]
